@@ -1,0 +1,409 @@
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@font-face {
+  font-family: Arial;
+  src: url('resources/myFont3.TTF');
+}
+
+@font-face {
+  font-family: Unispace;
+  src: url('resources/myFont5.TTF');
+}
+
+@font-face {
+  font-family: Bauhaus93;
+  src: url('resources/myFont4.TTF');
+}
+
+@font-face {
+  font-family: Stencil;
+  src: url('resources/myFont1.TTF');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#main {
+	font-family: Arial;
+	background-image: url('resources/pts/bg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+i {
+	padding-right: 7px;
+	vertical-align: middle;
+}
+
+#header {
+	height: 70px;
+	background-color: #F4F4F4;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    z-index: 1;
+}
+
+#nav {
+	display: inline-block;
+}
+
+#nav .title {
+	font-family: Bauhaus93;
+}
+
+#nav, .subnav, .subnav2 , .subRightNav{
+	list-style: none;
+}
+
+#nav > li {
+	display: inline-block;
+} 
+
+#nav li {
+	position: relative;
+}
+
+#nav li h4 {
+	color: black;
+	text-decoration: none;
+	line-height: 70px;
+	padding: 0 24px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: Unispace;
+}
+
+#nav li.img {
+	vertical-align: middle;
+}
+
+#nav  li  a {
+	color: black;
+	text-decoration: none;
+	line-height: 70px;
+	padding: 0 24px;
+	font-size: 20px;
+	display: block;
+	text-transform: uppercase;
+}
+
+#nav > li > a:hover {
+	background-color: #F2F2F2;
+}
+
+#nav li:hover .subnav {
+	display: block;
+}
+
+#nav .subnav {
+	position: absolute;
+	min-width: 150px;
+	background-color: #F4F4F4;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+#nav .subnav li a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#nav .subnav > li:hover > a {
+	background-color: #F2F2F2;
+}
+
+#nav .subnav .subnav2 {
+	left: 100%;
+	top: 0;
+	min-width: 230px;
+	position: absolute;
+	background-color: #F4F4F4;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+#nav .subnav li a:hover {
+	background-color: #F2F2F2;
+}
+
+#nav .subnav li:hover .subnav2 {
+	display: block;
+}
+
+
+#header .rightNav {
+	float: right;
+}
+
+#header .rightNavIcon {
+	font-size: 25px;
+	line-height: 70px;
+	padding: 0 37px;
+	position: relative;
+}
+
+#header .rightNav:hover {
+	background-color: #F2F2F2;
+	cursor: pointer;
+}
+
+#header .subRightNav {
+	background-color: white;
+	margin-top: -70px;
+	margin-right: 1px;
+	width: 180px;
+	padding-bottom: 400px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: none;
+	position: fixed;
+	right: 0.1%
+}
+
+#header .subRightNav li a{
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	text-indent: 30px;
+}
+
+#header .subRightNav .close {
+	display: inline-block;
+	float: right;
+}
+
+#header .subRightNav .close i {
+	font-size: 20px;
+	padding: 5px;
+}
+
+#header .subRightNav li.imgLogo {
+	padding: 20px 66px;
+}
+
+
+#footer {
+	min-height: 470px;
+	background-color: #F4F4F4;
+}
+
+#footer img.imageLogo {
+	display: block;
+	margin: 0 auto;
+}
+
+#footer h2 {
+	text-align: center;
+	font-family: Unispace;
+}
+
+#footer h4 {
+	text-align: center;
+}
+
+#footer .listIcon {
+	padding-top: 5px;
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#footer .listIcon li {
+	display: inline-block;
+}
+
+#footer .listIcon li a i{
+	font-size: 30px;
+	color: black;
+}
+
+#footer .infoWeb {
+	display: block;
+	min-height: 110px;
+	margin: 0 auto;
+}
+
+#footer .infoWeb > li {
+	float: left;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+}
+
+#footer .subInfoWeb {
+	list-style: none;
+}
+
+#footer .condition1 {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+
+#footer .condition1 ul li {
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 33%;
+	display: inline-block;
+}
+
+#footer .condition1 a {
+	color: black;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 17px;
+}
+
+#footer .condition2 {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+#footer .condition2 ul li {
+	float: left;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+}
+
+#footer .condition2 a {
+	color: black;
+	text-decoration: none;
+	padding-left: 15px;
+	font-family: Arial;
+	font-size: 17px;
+}
+
+#footer .end h5 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
+#Gcontent {
+	width: 50%;
+	margin: 30px auto;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 200px 200px;
+	grid-gap: 5px;
+	justify-content: center;
+}
+
+#Gface {
+	width: 50%;
+	height: 80px;
+	margin: 10px auto;
+	text-align: center;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	margin-top: 80px;
+}
+
+#Gface {
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#Gface  img {
+	border-radius: 40px;
+	padding-top: 2px;
+}
+
+.item img {
+	width: 200px;
+	height: auto;
+}
+
+.item1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+@media screen and (min-width: 1418px) {
+
+	#header .rightNav {
+		float: right;
+		margin-top: 1%;
+	}
+
+	#header .subRightNav .close {
+		display: inline-block;
+		float: right;
+		margin: 10px;
+	}
+
+	#header .subRightNav .close i {
+		font-size: 40px;
+	}
+
+	#header .subRightNav li.imgLogo {
+		margin-left: 15%;
+		margin-top: 5%;
+	}
+
+	#header .subRightNav li.imgLogo img {
+		width: 150px;
+		height: auto;
+	}
+
+	#header .subRightNav {
+		background-color: white;
+		width: 30vh;
+		padding-bottom: 400px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	#header .subRightNav li a{
+		color: black;
+		text-decoration: none;
+		font-size: 40px;
+		display: inline-block;
+		text-indent: 40px;
+	} 
+
+
+	#Gface {
+		margin-top: 3%;
+		margin-bottom: 5%;
+	}
+
+
+	#Gcontent {
+		width: 50%;
+		margin: 30px auto;
+		height: 600px;
+		display: grid;
+		grid-template-columns: 300px 300px 300px;
+		grid-template-rows: 300px 300px;
+		grid-gap: 5px;
+		justify-content: center;
+	}
+
+	.item img {
+		width: 300px;
+		height: auto;
+	}
+}
